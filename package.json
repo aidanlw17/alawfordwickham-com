@@ -1,0 +1,52 @@
+{
+  "name": "alw-site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "NODE_ENV=production parcel build index.html",
+    "fresh-start": "rm -rf .parcel-cache && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "gray-matter": "^4.0.2",
+    "import-glob": "^1.5.0",
+    "next": "^9.4.4",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "nano-react-app",
+      [
+        "@babel/preset-env",
+        {
+          "shippedProposals": true
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-preset-nano-react-app": "^0.1.0",
+    "marked": "^1.1.1",
+    "parcel-plugin-markdown-string": "^1.4.2"
+  }
+}
